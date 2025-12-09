@@ -1,0 +1,3 @@
+# Introduction aux bonnes pratiques R
+
+Les bonnes pratiques en R sont un ensemble de convention, qui font sens, pour mettre de faciliter la collaboration, la maintenance et la lisibilité des codes R. Ces bonnes pratiques sont à discuter avec l'ensemble des équipes. Ici, nous proposons une manière de faire, à chacun d'adapter pour son organisation, mais doit être la même au sein de la même organisation, afin de faciliter la revue par les pairs

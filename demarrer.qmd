@@ -1,0 +1,66 @@
+# Démarrer un projet R avec Rstudio
+
+Rstudio permet de mieux coder en R et favorise notamment une meilleure structuration des projets avec le Rproj (exit le setpwd). Pour l'instant, Positron a abandonné le fonctionnement en Rproj propre à Rstudio. Cependant, nous restons pour l'instant avec Rstudio.
+
+Voici un pas à pas pour créer un projet dans Rstudio
+
+## 1. Initialiser un projet
+
+Menu en haut à gauche \> Fichier \> Nouveau Projet
+
+![](img/Nouveau_projet.png)
+
+A priori si ex-nihilo, "Nouveau répertoire"
+
+![](img/Nouveau_projet_popup.png)
+
+Pour un projet R simple, "Nouveau projet"
+
+![](img/Nouveau_projet_popup2.png)
+
+1.  Renseigner le nom du projet
+2.  Activer renv pour la reproductibilité (librairie pour sauvegarder les versions des packages)
+3.  Créer un nouveau projet
+
+![](img/Nouveau_projet_popup3.png)
+
+## 2. Configuration du Rproj
+
+On a ensuite la vue suivante, on va configurer le rproj (fichier de configuration Rstudio):
+
+En bas à droite, cliquer sur le {nom_du_projet).Rproj
+
+![](img/Nouveau_projet_workspace.png)
+
+Cela ouvre les options du projet :
+
+1.  Mettre Non à la restauration du .RData (pour la reproductibilité on ne charge pas d'état antérieur)
+2.  Mettre Non à la sauvegarde du .RData (par symétrique on ne sauvegarde pas d'état courant)
+3.  Metrte Non à la sauvegarde d'historique (parfois on peut sans faire exprès coller un mot de passe dans la console, peu de personnes réutilisent leur historique également)
+
+![](img/Nouveau_projet_rproj.png)
+
+## 3. Organiser son projet avec une structure lisible de sous-dossier
+
+Les projets les plus maintenables découpent leur organisation en sous-répertoire, les noms peuvent varier d'une organisation à l'autre, mais les principes restent les mêmes :
+
+1.  Data/Données (où sont stockées les données)
+2.  R/Scripts (où sont stockés les programmes)
+3.  Output/Résultats (où sont produits les résultats)
+4.  Temp/Intermédiaire (où sont stockés les éventuels produits intermédiaires)
+
+Pour cela, créer les sous-répertoires en bas à droite avec l'icone répertoire, puis mettre un nom dans la boite de dialogue :
+
+![](img/Nouveau_projet_workspace_data.png)
+
+Cela donne un résultat final comme cela :
+
+![](img/Nouveau_projet_workspace_structuration.png)
+
+Ajuster le fichier .gitignore (ici on ignore l'intégralité du répertoire data et temp, mais ajustez en fonction de vos besoins) :
+
+![](img/Nouveau_projet_workspace_gitignore.png)
+
+# Pour en savoir plus
+
+[Documentation Utilit'R : 4 Utiliser les projets RStudio](https://book.utilitr.org/03_Fiches_thematiques/Fiche_rprojects.html)

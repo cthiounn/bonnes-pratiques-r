@@ -2,15 +2,14 @@
 
 Quelques sites de référence pour coder en R :
 
-::: {#refs}
 
-[R for Data Science (2e)](https://r4ds.hadley.nz/)
+* [R for Data Science (2e)](https://r4ds.hadley.nz/)
 
-[R Packages (2e)](https://r-pkgs.org/)
+* [R Packages (2e)](https://r-pkgs.org/)
 
-[UtilitR](https://book.utilitr.org/)
+* [UtilitR](https://book.utilitr.org/)
 
-[Newslett'R](https://leoniefvr.github.io/Newslett-R/)
+* [Newslett'R](https://leoniefvr.github.io/Newslett-R/)
 
-[Aide mémoire SAS-R-Python](https://aide-memoire-r-sas.netlify.app/)
-:::
+* [Aide mémoire SAS-R-Python](https://aide-memoire-r-sas.netlify.app/)
+

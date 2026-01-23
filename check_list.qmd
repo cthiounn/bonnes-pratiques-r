@@ -1,4 +1,7 @@
-# Liste de vérifications pour un projet R
+# Liste de vérifications pour un projet R {.unnumbered}
+
+
+## Pour les nouveaux projets
 
 - [ ] Avoir initialisé un projet et avoir configuré le fichier de configuration `.Rproj`
 - [ ] Avoir initialisé une structuration de projet
@@ -9,3 +12,19 @@
 - [ ] Avoir rempli le `readme`
 - [ ] Se mettre d'accord sur un formattage
 - [ ] (optionnel) Utiliser `targets`
+
+
+
+## Pour les projets déjà existants
+
+- [ ] S'assurer qu'il y a un Rproj bien configuré
+- [ ] Structurer le projet en sous dossier
+- [ ] Mettre à jour avec git
+- [ ] S'assurer que le fichier `.gitignore` est bien configuré
+- [ ] Passer à ou vérifier un environnement `renv`
+- [ ] S'assurer qu'il n'y a pas de secrets dans les scripts R (chemin). Si oui, les externaliser dans un fichier de configuration
+- [ ] Mettre à jour le `readme`
+- [ ] Se mettre d'accord sur un formattage
+- [ ] Découper les traitements en plusieurs étapes avec des fonctions
+- [ ] (optionnel) Utiliser `targets`
+- [ ] J'ai besoin d'aide

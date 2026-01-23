@@ -3,12 +3,14 @@ project:
 
 book:
   title: "Les bonnes pratiques en R"
-  author: "Conrad THIOUNN"
-  date: "09/12/2025"
+  author: "Réseau des référentes et référents R"
+  date: "12/09/2025"
   chapters:
     - index.qmd
     - intro.qmd
     - demarrer.qmd
+    - renv.qmd
+    - check_list.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -16,8 +18,9 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    code-link: true
+    code-copy: true
   pdf:
     documentclass: scrreprt
 
 editor: visual
-

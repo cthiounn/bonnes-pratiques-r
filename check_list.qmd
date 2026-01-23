@@ -1,0 +1,11 @@
+# Liste de vérifications pour un projet R
+
+- [ ] Avoir initialisé un projet et avoir configuré le fichier de configuration `.Rproj`
+- [ ] Avoir initialisé une structuration de projet
+- [ ] Avoir poussé le projet avec `git` ou créer le projet depuis une forge de code
+- [ ] Avoir configuré le fichier `.gitignore`
+- [ ] Avoir configuré un environnement `renv`
+- [ ] Avoir configuré un fichier de configuration `secrets.yaml`
+- [ ] Avoir rempli le `readme`
+- [ ] Se mettre d'accord sur un formattage
+- [ ] (optionnel) Utiliser `targets`

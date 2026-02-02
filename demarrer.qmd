@@ -53,6 +53,12 @@ Pour cela, créer les sous-répertoires en bas à droite avec l'icone répertoir
 
 ![](img/Nouveau_projet_workspace_data.png)
 
+OU utiliser la commande suivante :
+
+```{r, eval=FALSE}
+lapply(c("data", "R", "output", "temp"), dir.create, showWarnings = FALSE)
+```
+
 Cela donne un résultat final comme cela :
 
 ![](img/Nouveau_projet_workspace_structuration.png)
@@ -63,20 +69,17 @@ Ajuster le fichier `.gitignore` (ici on ignore l'intégralité du répertoire `d
 
 ## Le pourquoi du comment ?
 
-1. Si vous codez en `R`, plutôt que `R`, utilisez `Rstudio` qui est davantage ergonomique. Pour l'instant, on ne passe pas à `Positron` qui demande de s'adapter
-2. Si vous codez avec `Rstudio`, il est fortement conseillé de créer un projet `R` dans `Rstudio` et d'utiliser le Rproj et de bien le configurer
-3. Pour des raisons de reproductibilité, on ne réutilise pas de session précédente. Le chiffre doit être produit par une chaîne de traitement reproductible, joué du début à la fin. Utiliser une session précédente engendre des risques de ne pas produire le bon chiffre.
-4. Vous pouvez faire des sauvegardes intermédiaires pour le développement et l'exploration, mais il est important que la production finale soit joué du début à la fin.
-5. Adopter un rangement par sous-répertoire permet de gagner en lisibilité sur le projet. Si ce rangement est similaire à d'autres projets, alors il n'y a pas de coût de passer d'un projet à l'autre.
-6. Ne pas sauvegarder les données non publiques, notamment en utilisant `git`. Il faut alors configurer proprement le fichier `.gitignore`.
+1.  Si vous codez en `R`, plutôt que `R`, utilisez `Rstudio` qui est davantage ergonomique. Pour l'instant, on ne passe pas à `Positron` qui demande de s'adapter
+2.  Si vous codez avec `Rstudio`, il est fortement conseillé de créer un projet `R` dans `Rstudio` et d'utiliser le Rproj et de bien le configurer
+3.  Pour des raisons de reproductibilité, on ne réutilise pas de session précédente. Le chiffre doit être produit par une chaîne de traitement reproductible, joué du début à la fin. Utiliser une session précédente engendre des risques de ne pas produire le bon chiffre.
+4.  Vous pouvez faire des sauvegardes intermédiaires pour le développement et l'exploration, mais il est important que la production finale soit joué du début à la fin.
+5.  Adopter un rangement par sous-répertoire permet de gagner en lisibilité sur le projet. Si ce rangement est similaire à d'autres projets, alors il n'y a pas de coût de passer d'un projet à l'autre.
+6.  Ne pas sauvegarder les données non publiques, notamment en utilisant `git`. Il faut alors configurer proprement le fichier `.gitignore`.
 
 ## Pour en savoir plus
 
 [Documentation Utilit'R : 4 Utiliser les projets RStudio](https://book.utilitr.org/03_Fiches_thematiques/Fiche_rprojects.html)
 
-[Documentation Utilit'R : 32  Structure des projets](https://book.utilitr.org/02_Bonnes_pratiques/02-structure-code.html)
+[Documentation Utilit'R : 32 Structure des projets](https://book.utilitr.org/02_Bonnes_pratiques/02-structure-code.html)
 
 [Newslett'R : Structuration des projets](https://leoniefvr.github.io/Newslett-R/Actus/6_structuration_projet.html)
-
-
-

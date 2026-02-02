@@ -26,5 +26,8 @@
 - [ ] Mettre à jour le `readme`
 - [ ] Se mettre d'accord sur un formattage
 - [ ] Découper les traitements en plusieurs étapes avec des fonctions
+- [ ] Mettre en place un système de journalisation
+- [ ] Décrire brièvement le traitement en haut du fichier
+- [ ] Placer les paramètres externes en tête de fichier
 - [ ] (optionnel) Utiliser `targets`
 - [ ] J'ai besoin d'aide
